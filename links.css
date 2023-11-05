@@ -1,0 +1,312 @@
+:root{
+    --khaki: rgb(7, 100, 100);
+}
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none ; border: none;
+    text-decoration: none;
+    text-transform:inherit;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+body{
+    background: var(--khaki);
+    
+}
+section{
+    padding: 2rem 9%;
+
+}
+.home{
+    padding: 10;
+    margin: 10;
+    box-sizing: border-box;
+    background-color: rgb(7, 100, 100);
+    text-align: left;
+    background-size:cover;
+    background-position: center;    
+
+}
+
+
+
+
+
+
+
+.homey{
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+    background:url(trading\ chart\ 7.png) no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.logo1 {
+    width: 100px;
+    border-radius: 50px;
+    float: left;
+    margin-right: 10px;
+}
+.SU{
+    display:inline-block;
+    margin-top: 1rem;
+    width: 100px;
+    border-radius: 50px;
+    background: #333;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.SU:hover{
+    background: grey;
+}
+header {
+    width: 100%;
+    border: 1px solid rgb(39, 211, 211); 
+    background: var(--khaki);
+    background-size:cover;
+    border-radius:0;
+    padding: 10px 15px;
+    font-size: 25px;
+    text-transform:none;  
+}
+header .header1 {
+    width: 100%;
+    height: 5px;  
+    border: 1px solid rgb(39, 211, 211); 
+    background: var(--khaki);
+    background-size:cover;
+    padding: 10px 15px;
+    margin: 110px;
+    text-transform:none; 
+   
+}
+.header1 .menyu{
+    font-size:small;
+
+}
+
+
+
+
+
+
+.menyu{
+    padding: 0;
+    margin: 0;   
+    box-sizing: border-box;
+    background-color: rgb(7, 100, 100);
+    text-align: left;
+    color: #333;
+    font-weight: bolder;
+    background-size:cover;
+    background-position: center;
+    
+}
+.logo{
+    font-size: 2rem;
+    color:#333;
+    font-weight: bolder;
+}
+.logo span{
+    color:var(--khaki);
+}
+.navbar a{
+    font-size: 17px;
+    padding:0 1.5rem;
+    color:#333;
+    text-transform: uppercase;
+    
+}
+.navbar a:hover{
+    color: #eee;
+}
+.icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+.icons a:hover{
+    color: var(--khaki);
+}
+.toggler{
+    display: none;
+    
+}
+.fa-bars{
+    font-size: 2rem;
+    color:#333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: 1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+
+
+/* css ya character after header */
+
+.logo{
+    width: 100px;
+    border-radius: 50px;
+    float: left;
+    margin-right: 10px;   
+}
+span{
+    color: #eeeeeeb0;
+    font-size: 1.3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    line-height: 1.5;
+    padding-top: 2rem;
+    text-transform:none; 
+}
+.lorem h2{
+    color: #eee;
+    font-size: 2.0rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    line-height: 1.5;
+    padding-top: 2rem;
+}
+.lorem h4{
+    color: #eeeeeeb0;
+    font-size: 1.5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    line-height: 1.5;
+    padding-top: 2rem;
+    text-transform:none;
+}
+.lorem img{
+    width: 50px;
+    border-radius: 25px;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media(max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+    .home{
+        background-position: left;
+    }  
+    .header1 .menyu{
+        height: 40px;
+
+    }
+}
+
+@media(max-width:768px){
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;left: 0;right: 0;
+        background: #eee;
+        border-top: 1rem solid rgba(0,0,0,1);
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0,100% 0,100% 100%,0% 100%);
+
+    }
+
+    header .navbar a{ 
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background:#fff; 
+        border: .1rem solid rgba(0,0,0,1);
+        display: block;
+       }
+
+       .home .content h3{
+        font-size: 5rem;
+       }
+
+       .home .content span{
+        font-size: 2.5rem;
+       }
+
+       .icons-container.icons h3{
+        font-size: 2rem;
+        }
+    
+    .icons-container.icons span{
+        font-size: 1.7rem;
+    }
+    
+}
+
+@media(max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+    
+}
+
+
+
+
+
